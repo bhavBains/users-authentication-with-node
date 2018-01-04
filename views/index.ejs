@@ -10,22 +10,24 @@
 
 <body>
 	<div class="container">
-		<h1>Playmaker.com</h1>
-		<form action="/users" method="post">
-			<h2>Register</h2>
-			<p>
-				<label for="register-email">Email</label>
-				<input type="text" name="email" id="register-email">
-			</p>
-			<p>
-				<label for="register-paswword">Password</label>
-				<input type="password" name="password" id="register-password">
-			</p>
-			<p>
-				<button>Create Account</button>
-			</p>
-		</form>
-	</div>	
+		<div class="jumbotron">
+			<h1>Playmaker.com</h1>
+			<form class="form" action="/users" method="post">
+				<h2>Register</h2>
+				<p class="form-group">
+					<label for="register-email">Email</label>
+					<input class="form-control" type="text" name="email" id="register-email">
+				</p>
+				<p class="form-group">
+					<label for="register-paswword">Password</label>
+					<input class="form-control" type="password" name="password" id="register-password">
+				</p>
+				<p>
+					<button type="submit" class="btn btn-primary">Create Account</button>
+				</p>
+			</form>
+		</div>
+	</div>
 </body>
 
 </html>
