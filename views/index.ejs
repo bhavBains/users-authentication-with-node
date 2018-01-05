@@ -14,12 +14,15 @@
 			<h1>Playmaker.com</h1>
 			<form class="form" action="/users" method="post">
 				<h2>Register</h2>
+				<%if(locals.error) {%>
+					<div class="alert alert-danger"><%= error%></div>
+				<% } %>
 				<p class="form-group">
 					<label for="register-email">Email</label>
 					<input class="form-control" type="text" name="email" id="register-email">
 				</p>
 				<p class="form-group">
-					<label for="register-paswword">Password</label>
+					<label for="register-password">Password</label>
 					<input class="form-control" type="password" name="password" id="register-password">
 				</p>
 				<p>
