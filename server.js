@@ -19,12 +19,12 @@ app.use(bodyParser.urlencoded({
 app.use(flash());
 
 app.use(session({
-  secret: process.env.SESSION_SECRET || 'it is a secret to everyone'
+  secret: process.env.SESSION_SECRET || 'it is a secret to everyone',
 }));
 
 
 app.listen(8080, () => {
-	console.log("server is up at PORT 8080")
+	console.log("server is up at PORT 8000")
 });
 
 app.use('/users', usersRoutes(knex));
